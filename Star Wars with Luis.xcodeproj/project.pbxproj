@@ -15,6 +15,7 @@
 		8289C59E21515DE50033CE5D /* PersonSearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8289C59D21515DE50033CE5D /* PersonSearchTableViewController.swift */; };
 		8289C5A021515E570033CE5D /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8289C59F21515E570033CE5D /* Person.swift */; };
 		8289C5A321515E950033CE5D /* PersonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8289C5A221515E950033CE5D /* PersonTableViewCell.swift */; };
+		8289C5A5215160720033CE5D /* PersonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8289C5A4215160720033CE5D /* PersonController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		8289C59D21515DE50033CE5D /* PersonSearchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonSearchTableViewController.swift; sourceTree = "<group>"; };
 		8289C59F21515E570033CE5D /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		8289C5A221515E950033CE5D /* PersonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonTableViewCell.swift; sourceTree = "<group>"; };
+		8289C5A4215160720033CE5D /* PersonController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				8289C5A121515E5D0033CE5D /* Model */,
+				8289C5A6215160760033CE5D /* Model Controller */,
 				8289C59A21515BA30033CE5D /* View */,
 				8289C59921515B9A0033CE5D /* View Controller */,
 			);
@@ -103,6 +106,14 @@
 				8289C59F21515E570033CE5D /* Person.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		8289C5A6215160760033CE5D /* Model Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8289C5A4215160720033CE5D /* PersonController.swift */,
+			);
+			path = "Model Controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,6 +191,7 @@
 				8289C5A021515E570033CE5D /* Person.swift in Sources */,
 				8289C59E21515DE50033CE5D /* PersonSearchTableViewController.swift in Sources */,
 				8289C5A321515E950033CE5D /* PersonTableViewCell.swift in Sources */,
+				8289C5A5215160720033CE5D /* PersonController.swift in Sources */,
 				8289C58721515AF00033CE5D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -327,7 +339,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "$(SRCROOT)/Star Wars with Luis/Resources/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -344,7 +356,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "$(SRCROOT)/Star Wars with Luis/Resources/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

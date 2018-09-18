@@ -26,7 +26,7 @@
                             </connections>
                         </searchBar>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PersonCell" rowHeight="118" id="9gA-bF-B9A">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PersonCell" rowHeight="118" id="9gA-bF-B9A" customClass="PersonTableViewCell" customModule="Star_Wars_with_Luis" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="72" width="375" height="118"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9gA-bF-B9A" id="Mlp-wj-h2h" customClass="PersonTableViewCell" customModule="Star_Wars_with_Luis" customModuleProvider="target">
@@ -64,6 +64,11 @@
                                         <constraint firstAttribute="bottomMargin" secondItem="C4t-Fg-9cz" secondAttribute="bottom" constant="10" id="wTB-wc-23W"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="ageLabel" destination="gDq-XH-Wcz" id="Rfl-m0-X8Y"/>
+                                    <outlet property="genderLabel" destination="Rbs-Wq-mDl" id="TZV-ut-fvZ"/>
+                                    <outlet property="nameLabel" destination="mHi-Q3-E8d" id="zqg-b0-0sz"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>

@@ -1,5 +1,5 @@
 //
-//  Person.swift
+//  PersonController.swift
 //  Star Wars with Luis
 //
 //  Created by Ilgar Ilyasov on 9/18/18.
@@ -7,9 +7,3 @@
 //
 
 import Foundation
-
-struct Person: Codable {
-    let name: String
-    let gender: String
-    let birthYear: String
-}
