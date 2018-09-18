@@ -77,6 +77,9 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Star Wars Search" id="AHs-Pa-Ydz"/>
+                    <connections>
+                        <outlet property="searchBar" destination="sES-0a-6pm" id="HGb-Il-2bd"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2lC-ZU-7PI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
