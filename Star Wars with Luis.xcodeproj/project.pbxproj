@@ -13,6 +13,8 @@
 		8289C59121515AF10033CE5D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8289C58F21515AF10033CE5D /* LaunchScreen.storyboard */; };
 		8289C59C21515C030033CE5D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8289C59B21515C030033CE5D /* Default-568h@2x.png */; };
 		8289C59E21515DE50033CE5D /* PersonSearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8289C59D21515DE50033CE5D /* PersonSearchTableViewController.swift */; };
+		8289C5A021515E570033CE5D /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8289C59F21515E570033CE5D /* Person.swift */; };
+		8289C5A321515E950033CE5D /* PersonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8289C5A221515E950033CE5D /* PersonTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		8289C59221515AF10033CE5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8289C59B21515C030033CE5D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		8289C59D21515DE50033CE5D /* PersonSearchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonSearchTableViewController.swift; sourceTree = "<group>"; };
+		8289C59F21515E570033CE5D /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		8289C5A221515E950033CE5D /* PersonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,7 @@
 		8289C58521515AF00033CE5D /* Star Wars with Luis */ = {
 			isa = PBXGroup;
 			children = (
+				8289C5A121515E5D0033CE5D /* Model */,
 				8289C59A21515BA30033CE5D /* View */,
 				8289C59921515B9A0033CE5D /* View Controller */,
 			);
@@ -79,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				8289C59D21515DE50033CE5D /* PersonSearchTableViewController.swift */,
+				8289C5A221515E950033CE5D /* PersonTableViewCell.swift */,
 			);
 			path = "View Controller";
 			sourceTree = "<group>";
@@ -89,6 +95,14 @@
 				8289C58A21515AF00033CE5D /* Main.storyboard */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		8289C5A121515E5D0033CE5D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8289C59F21515E570033CE5D /* Person.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,7 +177,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8289C5A021515E570033CE5D /* Person.swift in Sources */,
 				8289C59E21515DE50033CE5D /* PersonSearchTableViewController.swift in Sources */,
+				8289C5A321515E950033CE5D /* PersonTableViewCell.swift in Sources */,
 				8289C58721515AF00033CE5D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
