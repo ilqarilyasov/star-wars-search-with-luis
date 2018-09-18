@@ -13,3 +13,7 @@ struct Person: Codable {
     let gender: String
     let birthYear: String
 }
+
+struct PersonSearchResults: Codable {
+    var results: [Person]
+}

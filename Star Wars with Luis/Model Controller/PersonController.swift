@@ -34,7 +34,31 @@ class PersonController {
         var request = URLRequest(url: requestURL)
         request.httpMethod = HTTPMethod.get.rawValue
         
-        
-        
+        let dataTask = URLSession.shared.dataTask(with: request) { (data, _, error) in
+            
+            if let error = error {
+                NSLog("Error fetching data: \(error)")
+                completion(nil, error)
+                return
+            }
+         
+            guard let data = data else {
+             NSLog("Error fetching data. No data returned")
+                completion(nil, error)
+                return
+            }
+            
+            do {
+                let jsonDecoder = JSONDecoder()
+                jsonDecoder.keyDecodingStrategy = .convertFromSnakeCase
+                let searchResults = try jsonDecoder.decode(PersonSearchResults.self, from: data)
+                let people = searchResults.results
+                completion(people, nil)
+            } catch {
+                NSLog("Error decoding data into people: \(error)")
+                completion(nil, error)
+            }
+        }
+        dataTask.resume()
     }
 }
